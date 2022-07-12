@@ -19,7 +19,7 @@ public class CircularMovment : MonoBehaviour
         
         float horizontal = Input.GetAxis("Horizontal");
         timeCounter += horizontal * Time.deltaTime;
-        float x = Mathf.Cos(timeCounter - (start * Mathf.PI/2)) * spead;
+        float x = Mathf.Cos(timeCounter - (start * Mathf.PI/2)) * spead * -1;
         float y = Mathf.Sin(timeCounter - (start * Mathf.PI/2)) * spead;
         float z = 0;
         gameObject.transform.position = new Vector3(x, y, z);        
