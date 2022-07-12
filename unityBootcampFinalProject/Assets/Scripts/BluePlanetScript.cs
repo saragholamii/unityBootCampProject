@@ -32,6 +32,7 @@ public class BluePlanetScript : MonoBehaviour
         else if(hitNumber == 1){
             sphere.SetActive(false);
         }
+        CalculatePoint.point ++;
 
     }
 }

@@ -34,6 +34,7 @@ public class RedPlanetScript : MonoBehaviour
         else if(hitNumber == 1){
             sphere.SetActive(false);
         }
+        CalculatePoint.point ++;
 
     }
 }
