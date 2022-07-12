@@ -11,7 +11,7 @@ public class BallMovemet : MonoBehaviour
     public GameObject star;
 
     private void Start() {
-        rb.AddForce(0, -10000 * Time.deltaTime, 0);
+        rb.AddForce(0, -40000 * Time.deltaTime, 0);
     }
 
 

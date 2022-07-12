@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BigCircle
   - SmallCircle
+  - Star
   layers:
   - Default
   - TransparentFX
