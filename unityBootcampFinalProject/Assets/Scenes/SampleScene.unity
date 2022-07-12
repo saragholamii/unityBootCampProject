@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2509445, g: 0.31024912, b: 0.4052826, a: 1}
+  m_IndirectSpecularColor: {r: 0.2509444, g: 0.31024897, b: 0.40528256, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -575,6 +575,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -854,6 +858,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1337,6 +1345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1411,6 +1423,7 @@ GameObject:
   - component: {fileID: 175185623}
   - component: {fileID: 175185622}
   - component: {fileID: 175185621}
+  - component: {fileID: 175185624}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -1444,8 +1457,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.2879819
+  m_Center: {x: 0, y: 0.00000035762787, z: -0.000000059604645}
 --- !u!23 &175185622
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1496,6 +1509,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175185619}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &175185624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175185619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186971454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,6 +1533,7 @@ GameObject:
   - component: {fileID: 186971458}
   - component: {fileID: 186971457}
   - component: {fileID: 186971456}
+  - component: {fileID: 186971459}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -1541,8 +1567,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.00000011920929, y: 0.00000016391277, z: 0.0000011920929}
 --- !u!23 &186971457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1593,6 +1619,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186971454}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &186971459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186971454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &197783611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1600,6 +1638,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2105,6 +2147,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -2327,6 +2373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2741,6 +2791,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2929,6 +2983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3434,6 +3492,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3534,6 +3596,7 @@ GameObject:
   - component: {fileID: 485178431}
   - component: {fileID: 485178430}
   - component: {fileID: 485178429}
+  - component: {fileID: 485178432}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -3567,8 +3630,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.00000023841858, y: -0.00000014901161, z: 0}
 --- !u!23 &485178430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3619,6 +3682,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485178427}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &485178432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485178427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &488097249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3737,6 +3812,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -3825,8 +3904,9 @@ GameObject:
   - component: {fileID: 496057672}
   - component: {fileID: 496057671}
   - component: {fileID: 496057670}
+  - component: {fileID: 496057673}
   m_Layer: 0
-  m_Name: YellowPlanet
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3910,6 +3990,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496057668}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &496057673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496057668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &507693897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3917,6 +4009,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Center.x
+      value: 5.249707e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Center.y
+      value: -0.0000000372529
+      objectReference: {fileID: 0}
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Center.z
+      value: -0.00000008009374
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4101,6 +4209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -4459,6 +4571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -4555,6 +4671,7 @@ GameObject:
   - component: {fileID: 685608745}
   - component: {fileID: 685608744}
   - component: {fileID: 685608743}
+  - component: {fileID: 685608746}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -4588,8 +4705,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.000001013279}
 --- !u!23 &685608744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4640,6 +4757,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685608741}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &685608746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685608741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &699311291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5384,6 +5513,7 @@ GameObject:
   - component: {fileID: 823934186}
   - component: {fileID: 823934185}
   - component: {fileID: 823934184}
+  - component: {fileID: 823934187}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -5417,8 +5547,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.000000059604645, y: 0.000000059604645, z: -0.00000035762787}
 --- !u!23 &823934185
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5469,6 +5599,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823934182}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &823934187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823934182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &829583467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5983,6 +6125,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6488,6 +6634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -6852,6 +7002,7 @@ GameObject:
   - component: {fileID: 1103409428}
   - component: {fileID: 1103409427}
   - component: {fileID: 1103409426}
+  - component: {fileID: 1103409429}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -6885,8 +7036,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.2879819
+  m_Center: {x: 0.00000017881393, y: -0.00000011920929, z: -0.00000011920929}
 --- !u!23 &1103409427
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6937,6 +7088,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103409424}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1103409429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103409424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1108863271
 GameObject:
   m_ObjectHideFlags: 0
@@ -7046,6 +7209,7 @@ GameObject:
   - component: {fileID: 1136764993}
   - component: {fileID: 1136764992}
   - component: {fileID: 1136764991}
+  - component: {fileID: 1136764994}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -7079,8 +7243,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798184
+  m_Center: {x: -0.00000017881393, y: -0.00000011920929, z: -0.00000047683716}
 --- !u!23 &1136764992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7131,6 +7295,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136764989}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1136764994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136764989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1154145172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7235,6 +7411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -7520,6 +7700,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7589,6 +7773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -7721,6 +7909,7 @@ GameObject:
   - component: {fileID: 1259612874}
   - component: {fileID: 1259612873}
   - component: {fileID: 1259612872}
+  - component: {fileID: 1259612875}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -7754,8 +7943,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0, y: 0.00000011920929, z: 0}
 --- !u!23 &1259612873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7806,6 +7995,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259612870}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1259612875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259612870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1281313072 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8742852092348295852, guid: 0720066148416f14db7b530df36c8223, type: 3}
@@ -7840,6 +8041,7 @@ GameObject:
   - component: {fileID: 1285686629}
   - component: {fileID: 1285686628}
   - component: {fileID: 1285686627}
+  - component: {fileID: 1285686630}
   m_Layer: 0
   m_Name: YellowPlanet
   m_TagString: Untagged
@@ -7925,6 +8127,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285686625}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1285686630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285686625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1319156834
 GameObject:
   m_ObjectHideFlags: 0
@@ -8260,8 +8474,9 @@ GameObject:
   - component: {fileID: 1367756635}
   - component: {fileID: 1367756634}
   - component: {fileID: 1367756633}
+  - component: {fileID: 1367756636}
   m_Layer: 0
-  m_Name: YellowPlanet
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8345,6 +8560,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367756631}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1367756636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367756631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1372090308
 GameObject:
   m_ObjectHideFlags: 0
@@ -8546,6 +8773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8633,6 +8864,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -9117,6 +9352,7 @@ GameObject:
   - component: {fileID: 1444817574}
   - component: {fileID: 1444817573}
   - component: {fileID: 1444817572}
+  - component: {fileID: 1444817575}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -9150,8 +9386,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.000000044703484, y: 0, z: 0}
 --- !u!23 &1444817573
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9202,6 +9438,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444817570}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1444817575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444817570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1461825895
 GameObject:
   m_ObjectHideFlags: 0
@@ -9500,6 +9748,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9595,6 +9847,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9694,6 +9950,7 @@ GameObject:
   - component: {fileID: 1508249748}
   - component: {fileID: 1508249747}
   - component: {fileID: 1508249746}
+  - component: {fileID: 1508249749}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -9727,8 +9984,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.00000011920929, y: 0.00000023841858, z: 0.00000047683716}
 --- !u!23 &1508249747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9779,6 +10036,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508249744}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1508249749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508249744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1510742345
 GameObject:
   m_ObjectHideFlags: 0
@@ -9980,6 +10249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -10272,8 +10545,9 @@ GameObject:
   - component: {fileID: 1543527269}
   - component: {fileID: 1543527268}
   - component: {fileID: 1543527267}
+  - component: {fileID: 1543527270}
   m_Layer: 0
-  m_Name: YellowPlanet
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10357,6 +10631,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543527265}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1543527270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543527265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1558760455
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,8 +10655,9 @@ GameObject:
   - component: {fileID: 1558760459}
   - component: {fileID: 1558760458}
   - component: {fileID: 1558760457}
+  - component: {fileID: 1558760460}
   m_Layer: 0
-  m_Name: circle
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10454,6 +10741,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558760455}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1558760460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558760455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1562274611
 GameObject:
   m_ObjectHideFlags: 0
@@ -10660,6 +10959,7 @@ GameObject:
   - component: {fileID: 1579780415}
   - component: {fileID: 1579780414}
   - component: {fileID: 1579780413}
+  - component: {fileID: 1579780416}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -10693,8 +10993,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.00000011920929, y: -0.00000016391277, z: -0.00000011920929}
 --- !u!23 &1579780414
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10745,6 +11045,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579780411}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1579780416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579780411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1579833105
 GameObject:
   m_ObjectHideFlags: 0
@@ -10951,8 +11263,9 @@ GameObject:
   - component: {fileID: 1661826640}
   - component: {fileID: 1661826639}
   - component: {fileID: 1661826638}
+  - component: {fileID: 1661826641}
   m_Layer: 0
-  m_Name: circle
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11036,6 +11349,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661826636}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1661826641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661826636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672232420
 GameObject:
   m_ObjectHideFlags: 0
@@ -11077,6 +11402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -11340,6 +11669,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -11696,6 +12029,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -11787,6 +12124,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -12058,6 +12399,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -12222,6 +12567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -12296,8 +12645,9 @@ GameObject:
   - component: {fileID: 1872339707}
   - component: {fileID: 1872339706}
   - component: {fileID: 1872339705}
+  - component: {fileID: 1872339708}
   m_Layer: 0
-  m_Name: YellowPlanet
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12381,6 +12731,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872339703}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1872339708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872339703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd437f194e362614680285417b0d43af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1894423515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12388,6 +12750,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12483,6 +12849,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -12654,6 +13024,7 @@ GameObject:
   - component: {fileID: 1960041639}
   - component: {fileID: 1960041638}
   - component: {fileID: 1960041637}
+  - component: {fileID: 1960041640}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -12687,8 +13058,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0, y: 0.000000059604645, z: 0.00000086426735}
 --- !u!23 &1960041638
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12739,6 +13110,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960041635}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &1960041640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960041635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1960950558
 GameObject:
   m_ObjectHideFlags: 0
@@ -12843,6 +13226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -12926,6 +13313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -13226,7 +13617,7 @@ Transform:
   m_GameObject: {fileID: 1986538774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.14, y: -7.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -13274,6 +13665,7 @@ GameObject:
   - component: {fileID: 2001590525}
   - component: {fileID: 2001590524}
   - component: {fileID: 2001590523}
+  - component: {fileID: 2001590526}
   m_Layer: 0
   m_Name: planetCirclel (1)
   m_TagString: Untagged
@@ -13307,8 +13699,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.00000023841858, y: 0.00000017881393, z: -0.000000059604645}
 --- !u!23 &2001590524
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13359,6 +13751,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001590521}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &2001590526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001590521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2003961475
 GameObject:
   m_ObjectHideFlags: 0
@@ -13485,6 +13889,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -13618,6 +14026,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7335917674793478142, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -14164,6 +14576,7 @@ GameObject:
   - component: {fileID: 2146711657}
   - component: {fileID: 2146711656}
   - component: {fileID: 2146711655}
+  - component: {fileID: 2146711658}
   m_Layer: 0
   m_Name: planetCircle (2)
   m_TagString: Untagged
@@ -14197,8 +14610,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.28798187
+  m_Center: {x: 0.000000059604645, y: 0.00000011920929, z: 0.0000009536743}
 --- !u!23 &2146711656
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14249,6 +14662,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146711653}
   m_Mesh: {fileID: 4300000, guid: 2448bd6a5888ad646b8c665e877aaaed, type: 3}
+--- !u!114 &2146711658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146711653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5f454f55c37340a6283efd627f86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4695098400135523514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14256,6 +14681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816098757}
     m_Modifications:
+    - target: {fileID: 739900240492392676, guid: 0720066148416f14db7b530df36c8223, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7673047847556121215, guid: 0720066148416f14db7b530df36c8223, type: 3}
       propertyPath: m_RootOrder
       value: 0
