@@ -9,6 +9,7 @@ public class BallMovemet : MonoBehaviour
     public Rigidbody rb;
     Vector3 lastVelocity;
     public AudioSource loseAudio;
+    public AudioSource ShootAudio;
 
     private void Start() {
         Debug.Log("inside start");
@@ -26,6 +27,9 @@ public class BallMovemet : MonoBehaviour
         if(other.gameObject.CompareTag("Cube")){
             loseAudio.Play();
             gameObject.SetActive(false);
+        }
+        if(other.gameObject.CompareTag("Disk")){
+            ShootAudio.Play();
         }
 
         lastVelocity = rb.velocity;
