@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class planetCircleScript : MonoBehaviour
 {
+    public AudioSource circleAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class planetCircleScript : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
+        circleAudio.Play();
         gameObject.SetActive(false);
     }
 }

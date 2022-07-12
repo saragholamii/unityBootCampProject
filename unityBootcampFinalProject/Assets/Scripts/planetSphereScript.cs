@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class planetSphereScript : MonoBehaviour
 {
+    public AudioSource sphereAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class planetSphereScript : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
+        sphereAudio.Play();
         gameObject.SetActive(false);
     }
 }

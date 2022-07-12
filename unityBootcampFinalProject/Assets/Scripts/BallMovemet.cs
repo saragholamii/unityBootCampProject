@@ -8,6 +8,7 @@ public class BallMovemet : MonoBehaviour
     //***** variables:
     public Rigidbody rb;
     Vector3 lastVelocity;
+    public AudioSource loseAudio;
 
     private void Start() {
         Debug.Log("inside start");
@@ -23,6 +24,7 @@ public class BallMovemet : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
 
         if(other.gameObject.CompareTag("Cube")){
+            loseAudio.Play();
             gameObject.SetActive(false);
         }
 

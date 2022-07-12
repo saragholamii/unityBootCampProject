@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StarScript : MonoBehaviour
 {
+    public AudioSource starAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class StarScript : MonoBehaviour
     //*****
     private void OnCollisionEnter(Collision other) {
         gameObject.SetActive(false);
+        starAudio.Play();
         CalculatePoint.point ++;
     }
 }
