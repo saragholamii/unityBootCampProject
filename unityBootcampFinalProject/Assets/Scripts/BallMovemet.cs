@@ -10,7 +10,7 @@ public class BallMovemet : MonoBehaviour
     Vector3 lastVelocity;
     public AudioSource loseAudio;
     public AudioSource ShootAudio;
-    private int heart = 7;
+    private int heart = 5;
     public GameObject[] Balloon;
     public ParticleSystem Effect;
 
@@ -49,7 +49,7 @@ public class BallMovemet : MonoBehaviour
 
         var direction = -Vector3.Reflect(lastVelocity.normalized, other.contacts[0].normal); 
         
-        rb.velocity = direction * 7;
+        rb.velocity = direction * 7  + new Vector3(Random.Range(-1f, +1f), Random.Range(-1f, +1f), Random.Range(-1f, +1f)).normalized * 0.2f;
     }
 
 }
