@@ -5,8 +5,8 @@ using UnityEngine;
 public class planetSphereScript : MonoBehaviour
 {
     public AudioSource sphereAudio;
-    //public ParticleSystem Effect;
-    //public GameObject Ball;
+    public ParticleSystem Effect;
+    public GameObject Balloon;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +22,12 @@ public class planetSphereScript : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         sphereAudio.Play();
         gameObject.SetActive(false);
-        /*
-        Instantiate(Effect, Ball.transform.position, Ball.transform.rotation);
-        Destroy(Ball);
-        Destroy(Effect, 3);
-        */
+        
+        Instantiate(Effect, Balloon.transform.position, Balloon.transform.rotation);
+        Destroy(Balloon);
+        //Destroy(Effect, 3);
+        Effect.Stop();
+        
         CalculatePoint.point += 5;
     }
 }
