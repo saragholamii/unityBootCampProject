@@ -6,7 +6,6 @@ public class planetSphereScript : MonoBehaviour
 {
     public AudioSource sphereAudio;
     public ParticleSystem Effect;
-    public GameObject Balloon;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +22,8 @@ public class planetSphereScript : MonoBehaviour
         sphereAudio.Play();
         gameObject.SetActive(false);
         
-        Instantiate(Effect, Balloon.transform.position, Balloon.transform.rotation);
-        Destroy(Balloon);
+        Instantiate(Effect, transform.position, transform.rotation);
+        Destroy(gameObject);
         //Destroy(Effect, 3);
         Effect.Stop();
         

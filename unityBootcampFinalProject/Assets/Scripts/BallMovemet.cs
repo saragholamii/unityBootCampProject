@@ -10,6 +10,9 @@ public class BallMovemet : MonoBehaviour
     Vector3 lastVelocity;
     public AudioSource loseAudio;
     public AudioSource ShootAudio;
+    private int heart = 7;
+    public GameObject[] Balloon;
+    public ParticleSystem Effect;
 
     private void Start() {
         Debug.Log("inside start");
@@ -25,8 +28,18 @@ public class BallMovemet : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
 
         if(other.gameObject.CompareTag("Cube")){
+
+            Instantiate(Effect, Balloon[heart-1].transform.position, Balloon[heart-1].transform.rotation);
+            Destroy(Balloon[heart-1]);
+            Effect.Stop();
             loseAudio.Play();
-            gameObject.SetActive(false);
+            if (heart == 1) {
+                gameObject.SetActive(false);
+            }
+            else {
+                heart --;
+            }
+            
         }
         if(other.gameObject.CompareTag("Disk")){
             ShootAudio.Play();
